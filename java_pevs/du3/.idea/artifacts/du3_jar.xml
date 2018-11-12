@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="du3:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/du3_jar</output-path>
+    <root id="archive" name="du3.jar">
+      <element id="module-output" name="du3" />
+    </root>
+  </artifact>
+</component>

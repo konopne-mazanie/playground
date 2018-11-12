@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1405228788"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -vewnhi -Fi/home/peter/Dokumenty/hra/lib/x86_64-linux -Fu/home/peter/Dokumenty/hra/lib -Fu/home/peter/Dokumenty/hra/ -FU/home/peter/Dokumenty/hra/lib/x86_64-linux/ -l hra.lpr"/>
+</CONFIG>

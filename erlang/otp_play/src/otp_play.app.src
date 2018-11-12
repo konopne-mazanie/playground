@@ -1,0 +1,15 @@
+{application, otp_play,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {otp_play_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, [otp_server, otp_client, otp_server_sup, play]},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

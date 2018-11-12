@@ -1,0 +1,153 @@
+program hra;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  cthreads,
+  {$ENDIF}{$ENDIF}
+
+  crt,
+  drawenv
+  { you can add units after this };
+var plpos,plnpos,ext:integer;
+var uspos,usnpos,first:integer;
+var ch:char;
+var bx,by,bnx,bny:integer;
+var side,updown:integer;
+var score,speed:integer;
+
+procedure usmov();
+begin
+ ch:=readkey;
+  case ch of
+  'H': usnpos:=uspos-1;
+  'P': usnpos:=uspos+1;
+  #27: ext:=1;
+  end;
+  if usnpos<2 then usnpos:=2;
+  if usnpos>17 then usnpos:=17;
+  drawenv_pl(2,uspos,usnpos);
+  uspos:=usnpos;
+end;
+
+procedure ballmov();
+begin
+if bx=3 then begin
+side:=1;
+updown:=random(1);
+
+if (by<(uspos-3)) or (by>(uspos+5)) then begin
+score:=score-1;
+gotoxy(14,21);
+write('   ');
+gotoxy(14,21);
+write(score);
+end;
+end;
+if (side=1) and (bx<58) then begin
+    bnx:=bx+1;
+   end;
+
+if bx=58 then begin
+side:=2;
+updown:=random(1);
+
+if (by<(plpos-2)) or (by>(plpos+4)) then begin
+score:=score+1;
+gotoxy(14,21);
+write('   ');
+gotoxy(14,21);
+write(score);
+end;
+end;
+
+if (side=2) and (bx>3) then begin
+    bnx:=bx-1;
+ end;
+
+if (by<>19) and (by<>2) then begin
+  if updown=0 then bny:=by-1 else bny:=by+1;
+end;
+
+if by=19 then begin
+ updown:=0;
+ bny:=by-1;
+end;
+
+if by=2 then begin
+ updown:=1;
+ bny:=by+1;
+end;
+
+drawenv_ball(bx,by,bnx,bny);
+bx:=bnx;
+by:=bny;
+end;
+
+procedure plmov();
+begin
+if first=2 then begin
+    first:=0;
+    gotoxy(3,3);
+    write(' ');
+    gotoxy(2,1);
+    TextBackground(Blue);
+    write(' ');
+    TextBackground(Black);
+  end;
+  if first<>2 then first:=2;
+
+  plnpos:=random(15)+2;
+  drawenv_pl(59,plpos,plnpos);
+  plpos:=plnpos;
+  if speed > 1 then
+  Delay(50-(speed*3)) else Delay(50);
+end;
+begin
+  randomize;
+  cursoroff;
+  drawenv_draw();
+  drawenv_pl(59,0,2);
+  plpos:=2;
+  ext:=0;
+  score:=0;
+  speed:=1;
+  gotoxy(8,22);
+ write(speed);
+
+  uspos:=1;
+  drawenv_pl(2,0,1);
+  first:=1;
+
+  bx:=3;
+  by:=2;
+  bny:=by;
+  drawenv_ball(0,0,3,2);
+
+  repeat
+  ballmov();
+  If keypressed then usmov();
+  ballmov();
+  If keypressed then usmov();
+
+  plmov();
+
+  If keypressed then usmov();
+
+
+    Case score of
+    5: speed:=2;
+    10: speed:=3;
+    13: speed:=4;
+    15: speed:=5;
+    17: speed:=6;
+    20: speed:=7;
+    end;
+ gotoxy(8,22);
+ write(speed);
+
+  until ext=1;
+
+end.
+

@@ -1,0 +1,13 @@
+DEFINE   1
+
+HALT
+   #comment
+nic
+   END
+DEFINE     MAIN
+IFWALL 1
+1
+END
+DEFINE nic
+PICKUP
+END

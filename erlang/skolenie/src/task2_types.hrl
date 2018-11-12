@@ -1,0 +1,1 @@
+-type product() :: {string(), integer()}. %{barcode, price}

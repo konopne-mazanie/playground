@@ -1,0 +1,168 @@
+/*
+	Author : Ashok
+	Website : http://responsivewebinc.com
+	********************************************
+	For Paid Support - Contact me.
+	********************************************
+*/
+		
+body{
+padding-top:0px;
+background:url('../img/android.png') repeat;
+font-family: 'Crete Round', Georgia, serif;
+font-size:18px;
+line-height:25px;
+color:#666;
+}
+
+a, a:visited{
+color:#1186ac;
+text-decoration:none;
+}
+
+a:hover{
+color:#2197bd;
+text-decoration:none;
+}
+
+header{
+margin-top:20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+color:#037194;
+font-weight:normal;
+}
+
+h1{
+font-size:50px;
+line-height:40px;
+}
+
+h2{
+font-size:35px;
+line-height:40px;
+padding:5px 0px;
+}
+
+h3{
+font-size:20px;
+line-height:30px;
+padding:5px 0px;
+}
+
+.logo{
+background:url('../img/header_back.png') repeat;
+text-align:center;
+color:#fff;
+//border:5px solid #fff;
+padding:40px 0px;
+border-bottom:0px;
+-webkit-box-shadow: 1px 3px 30px #FF0000;
+-moz-box-shadow: 1px 3px 30px #FF0000;
+}
+
+.logo h1{
+padding:0px 5px;
+}
+
+.logo a, .logo a:visited, .logo a:hover{
+color:#fff;
+text-decoration:none;
+}
+
+.logo p{
+font-size:20px;
+padding:20px 5px 0px 5px;
+line-height:22px;
+}
+
+.navbar-inner{
+border-radius:0px;
+font-size:15px;
+padding-left:0px;
+padding-right:0px;
+box-shadow:none;
+}
+
+.navbar{
+margin-top:20px;
+margin-bottom:0px;
+border-left:5px solid #fff;
+border-right:5px solid #fff;
+}
+
+.navbar li a{
+padding-left:16px !important;
+padding-right:16px !important;
+}
+
+.nav-collapse a{
+font-weight:normal !important;
+}
+
+.main .container{
+background:#fff;
+}
+
+.entry{
+padding:10px;
+}
+
+.sidebar{
+padding:10px;
+border-left:1px solid #f3f3f3;
+font-size:15px;
+}
+
+.social img{
+margin-right:8px;
+}
+
+.sidebar ul, ul li{
+margin:0;
+padding:0;
+list-style-type:none;
+}
+
+.sidebar ul li{
+background:url('../img/arrow.png') 0 3px no-repeat;
+padding-left:20px;
+}
+
+.sidebar a{
+color:#006585;
+}
+
+.sidebar a:hover{
+text-decoration:underline;
+}
+
+/* Footer */
+
+footer{
+font-size:11px;
+color:#fff;
+font-family:Tahoma, Verdana, sans-serif;
+}
+
+footer .container{
+background:url('../img/header_back.png') repeat;
+}
+
+footer a, footer a:visited{
+color:#fff;
+text-decoration:underline;
+}
+
+footer a:hover{
+color:#fff;
+}
+
+.padd{
+padding:5px 8px;
+}
+
+.attr{
+text-align:right;
+}
