@@ -1,0 +1,6 @@
+<!DOCTYPE database [
+<!ELEMENT database (table*)>
+<!ELEMENT table name CDATA #REQUIRED (row*)>
+<!ELEMENT row (col*)>
+<!ELEMENT col name CDATA #REQUIRED (#CDATA)>
+]>

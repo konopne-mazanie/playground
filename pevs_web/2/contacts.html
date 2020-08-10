@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Priklad 2/4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+    #contacts {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #contacts td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #contacts tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #contacts tr:hover {background-color: #ddd;}
+    
+    #contacts th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #ff8533;
+      color: white;
+    }
+    </style>
+
+<script lang="javascript" src="common.js"></script>
+
+<script lang="javascript">
+      function loadDoc() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            parse(this);
+            }
+          };
+          xhttp.open("GET", "mock_db.xml", true);
+          xhttp.send();
+      }
+      
+      function parse(xml) {
+          var parsed = '<tr><th>Meno<th>Cislo<th>Email';
+          var i, j;
+          var xmlDoc = xml.responseXML;
+          var table = xmlDoc.getElementsByTagName("table");
+          
+          for (i = 0; i < table.length; i++) {
+            if (table[i].getAttribute('name') == 'contacts') {
+              var rows = table[i].getElementsByTagName('row');
+              for (j = 0; j < rows.length; j++) {
+                parsed+= "<tr>"
+                parsed+= "<td>" + rows[j].getElementsByTagName('col')[0].textContent;
+                parsed+= "<td>" + rows[j].getElementsByTagName('col')[1].textContent;
+                parsed+= "<td>" + rows[j].getElementsByTagName('col')[2].textContent;
+              }
+            break;
+            }
+          }
+          document.getElementById("contacts").innerHTML = parsed;
+      }
+      loadDoc();
+  </script>
+</head>
+<body class="contacts">
+
+<div class="header"></div>
+<div class="navbar"></div>
+
+
+<div class="content">
+    <div class="heading">Kontakty</div>
+    <table id="contacts"></table>
+</div>
+
+
+<div class="footer"></div>
+
+</body>

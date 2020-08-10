@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Priklad 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script lang="javascript" src="common.js"></script>
+
+<script lang="javascript">
+var pattern = /^[a-zA-Z0-9_]*$/;
+function validate() {
+    document.querySelector(".errorlist").innerHTML = "";
+    document.querySelector('.errorlist').style.display = 'none';
+    var errors = '';
+    var name = document.forms['regform']['name'].value;
+    var pass = document.forms['regform']['pass'].value;
+    var photo = document.forms['regform']['photo'].value;
+    var agree = document.forms['regform']['agree'].checked;
+    if (!pattern.test(name) || (name.length < 5)) errors+= '<li>Nespavne meno!';
+    if (!pattern.test(pass) || (pass.length < 10)) errors+= '<li>Nespravne heslo!';
+    if (photo.length == 0) errors+= '<li>Subor nebol nahrany!';
+    if (!agree) errors+= '<li>Podmienky neboli akceptovane!';
+    if (errors.length > 0) {
+        document.querySelector('.errorlist').innerHTML = '<ul>' + errors + '</ul>';
+        document.querySelector('.errorlist').style.display = 'block';
+        return false;
+    }
+    window.alert("ok");
+    return true;
+}
+</script>
+
+</head>
+<body class="register">
+
+<div class="header"></div>
+<div class="navbar"></div>
+
+
+<div class="content">
+    <div class="heading">Registracia</div>
+    <div class="errorlist" style="background-color: aliceblue;padding:10px;margin-bottom:10px;display:none;"></div>
+    <form name="regform" onsubmit="return validate()" action="registracia.html" method="GET">
+        <table>
+        <tr><td>*Meno: <td><input type="text" placeholder="A-Z, a-z, 0-9, > 5 znakov" name="name">
+        <tr><td>*Heslo: <td><input type="password" placeholder="A-Z, a-z, 0-9, > 10 znakov" name="pass">
+        <tr><td>*Foto: <td><input type="file" name="photo">
+        <tr><td>*Pohlavie:
+        <td><select>
+            <option>Muz</option>
+            <option>Zena</option>
+            <option>Neviem</option>
+        </select>
+        <tr><td>Zivotopis: <td><textarea rows="5" cols="20"></textarea>
+        <tr><td><td><input type="checkbox" name="agree"> *Suhlasim so zapredanim svojej duse diablovi
+    </table>
+    <input type="submit" value="Registruj!">
+    </form>
+    Polia oznacene * su povinne!<br>
+</div>
+
+
+<div class="footer"></div>
+
+</body>

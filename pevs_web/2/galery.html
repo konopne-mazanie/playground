@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Priklad 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script lang="javascript" src="common.js"></script>
+
+<link rel="stylesheet" href="../deps/baguette/baguetteBox.min.css">
+<script src="../deps/baguette/baguetteBox.min.js" async></script>
+<script lang="javascript">
+    window.addEventListener('load', function() {
+        baguetteBox.run('.gallery');
+    });
+</script>
+</head>
+<body class="galery">
+
+<div class="header"></div>
+<div class="navbar"></div>
+
+
+<div class="content">
+    <div class="heading">Galeria</div>
+    <div class="gallery">
+        <a href="img/1.jpg">
+            <img src="img/thumbs/1.jpg" alt="First image">
+        </a>
+        <a href="img/2.jpg">
+            <img src="img/thumbs/2.jpg" alt="Second image">
+        </a>
+    </div>
+</div>
+
+
+<div class="footer"></div>
+
+</body>

@@ -1,0 +1,34 @@
+<!DOCTYPE database SYSTEM "mock_db.dtd">
+<database>
+    <table name="articles">
+        <row>
+            <col name="heading">Article 1</col>
+            <col name="text">
+            	Aenean eget mi tristique, iaculis urna dictum, malesuada erat. Vestibulum congue quis est nec molestie. Cras accumsan porta tincidunt. Mauris congue efficitur suscipit. Vivamus feugiat, est nec porta 				facilisis, tellus ante feugiat risus, sit amet consequat tellus ligula eget elit. Sed commodo mattis odio, id auctor ante gravida non. Nullam ultricies est eu fringilla venenatis. Suspendisse semper orci 				vel justo placerat, vel ullamcorper tellus viverra. Quisque lorem mi, malesuada eget mauris id, semper varius ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 					himenaeos. Ut sagittis odio est, mattis eleifend nibh facilisis eget. Vestibulum a ultrices odio. Vivamus lobortis, massa ut placerat fringilla, quam ex ultrices lectus, vitae sodales mi eros vitae odio. 				Fusce id libero eu purus commodo laoreet ut id lectus.
+            </col>
+        </row>
+        <row>
+            <col name="heading">Article 2</col>
+            <col name="text">
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet justo eu lectus tincidunt iaculis. Donec nisi ex, auctor quis euismod ut, posuere sed urna. Praesent malesuada dolor sed felis 				placerat, sit amet ultricies risus bibendum. Sed a diam non sem mollis rutrum. In vel ex maximus, facilisis dui id, molestie nibh. Vestibulum nec ornare mauris, in tristique sapien. Nam sollicitudin 					posuere nisl. Aliquam rhoncus mi nec ligula faucibus convallis. Vivamus ut turpis at velit pretium tempor. Aliquam sit amet arcu quis est laoreet pharetra et a nisl. Vivamus fringilla velit id felis 					consequat, eu efficitur odio consequat. Cras faucibus in ex sed vehicula.
+            </col>
+        </row>
+    </table>
+    <table name="contacts">
+        <row>
+            <col name="name">Pavol</col>
+            <col name="number">+421 999 888 777</col>
+            <col name="email">palko_nunu@gmail.com</col>
+        </row>
+        <row>
+            <col name="name">Stefan</col>
+            <col name="number">+421 999 888 666</col>
+            <col name="email">pista@outlook.com</col>
+        </row>
+        <row>
+            <col name="name">Norbert</col>
+            <col name="number">+421 999 888 444</col>
+            <col name="email">noro@nrsr.sk</col>
+        </row>
+    </table>
+</database>

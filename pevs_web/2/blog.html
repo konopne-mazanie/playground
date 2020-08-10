@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Priklad 2/4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script lang="javascript" src="common.js"></script>
+<script lang="javascript">
+  var articles = [];
+    function showArticle(name) {
+      document.getElementById("articleHeading").innerHTML = name;
+      document.getElementById("articleText").innerHTML = articles[name];
+    }
+
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+          parse(this);
+          }
+        };
+        xhttp.open("GET", "mock_db.xml", true);
+        xhttp.send();
+    }
+    
+    function parse(xml) {
+        var parsed = '<h3>Articles&nbsp;&nbsp;</h3>';
+        var i, j;
+        var xmlDoc = xml.responseXML;
+        var table = xmlDoc.getElementsByTagName("table");
+        
+        for (i = 0; i < table.length; i++) {
+          if (table[i].getAttribute('name') == 'articles') {
+            var rows = table[i].getElementsByTagName('row');
+            for (j = 0; j < rows.length; j++) {
+              articles[rows[j].getElementsByTagName('col')[0].textContent] = rows[j].getElementsByTagName('col')[1].textContent;
+              parsed+= "<a href='#' onClick='showArticle(\"" + rows[j].getElementsByTagName('col')[0].textContent + "\");'>" + rows[j].getElementsByTagName('col')[0].textContent + "</a>&nbsp;&nbsp;";
+            }
+          break;
+          }
+        }
+        document.getElementById("articleList").innerHTML = parsed;
+    }
+    loadDoc();
+</script>
+</head>
+<body class="blog">
+
+<div class="header"></div>
+<div class="navbar"></div>
+
+
+<div class="content">
+    <div class="heading">Blog</div>
+    <div id="articleList" style="background-color: aliceblue;padding:10px;margin-bottom:10px;"></div>
+    <h2 id="articleHeading"></h2>
+    <div id="articleText"></div>
+    
+</div>
+
+
+<div class="footer"></div>
+
+</body>

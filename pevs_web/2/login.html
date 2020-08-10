@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Priklad 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script lang="javascript" src="common.js"></script>
+
+<script lang="javascript">
+function validate() {
+	document.querySelector('.errorlist').style.display = 'block';
+    document.querySelector('.errorlist').innerHTML = "Nespravne meno/heslo, zaregistrovat sa mozete <a href='registracia.html'>TU</a>";
+    return false;
+}
+</script>
+
+</head>
+<body class="login">
+
+<div class="header"></div>
+<div class="navbar"></div>
+
+
+<div class="content">
+    <div class="heading">Prihlasenie</div>
+    <div class="errorlist" style="background-color: aliceblue;padding:10px;margin-bottom:10px;display:none;"></div>
+    <form name="regform" onsubmit="return validate()" action="login.html" method="GET">
+        <table>
+        <tr><td>Meno: <td><input type="text" name="name">
+        <tr><td>Heslo: <td><input type="password" name="pass">
+    </table>
+    <input type="submit" value="Prihlasit">
+    </form>
+</div>
+
+
+<div class="footer"></div>
+
+</body>
