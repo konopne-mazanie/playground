@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41d7166a-3939-463e-9e0a-3f607dfd7d91" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="41d7166a-3939-463e-9e0a-3f607dfd7d91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../taskMachine/taskMachine.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/du3_jar/du3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/du3_jar/du3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/du3/META-INF/du3.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/.vs/Quizz/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/.vs/Quizz/v16/Server/sqlite3/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/.vs/Quizz/v16/Server/sqlite3/storage.ide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/App.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/App.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/App.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/GeneratedInternalTypeHelper.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/MainWindow.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/MainWindow.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/MainWindow.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.g.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz_MarkupCompile.i.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz_MarkupCompile.i.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/2/Quizz/obj/Debug/Quizz_MarkupCompile.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pevs_cs/pevs_cs_1/Dictionary/.vs/Dictionary/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../pevs_cs/pevs_cs_1/Dictionary/.vs/Dictionary/v16/.suo" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,34 +51,31 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1U4rtnF0pUkzXUoMJfWd5TbQCBe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.pevs.Main" />
       <module name="du3" />
       <method v="2">
@@ -57,6 +89,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -69,47 +102,5 @@
       <updated>1574626925695</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="768" y="239" width="374" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1574805094185">
-      <screen x="0" y="27" width="1920" height="999" />
-    </state>
-    <state x="768" y="239" width="374" height="582" key="#com.intellij.ide.util.MemberChooser/0.27.1920.999@0.27.1920.999" timestamp="1574805094185" />
-    <state width="1874" height="222" key="GridCell.Tab.0.bottom" timestamp="1574810259466">
-      <screen x="0" y="27" width="1920" height="894" />
-    </state>
-    <state width="1874" height="222" key="GridCell.Tab.0.bottom/0.27.1920.894@0.27.1920.894" timestamp="1574810259466" />
-    <state width="1874" height="257" key="GridCell.Tab.0.bottom/0.27.1920.999@0.27.1920.999" timestamp="1574810135499" />
-    <state width="1874" height="222" key="GridCell.Tab.0.center" timestamp="1574810259465">
-      <screen x="0" y="27" width="1920" height="894" />
-    </state>
-    <state width="1874" height="222" key="GridCell.Tab.0.center/0.27.1920.894@0.27.1920.894" timestamp="1574810259465" />
-    <state width="1874" height="257" key="GridCell.Tab.0.center/0.27.1920.999@0.27.1920.999" timestamp="1574810135499" />
-    <state width="1874" height="222" key="GridCell.Tab.0.left" timestamp="1574810259464">
-      <screen x="0" y="27" width="1920" height="894" />
-    </state>
-    <state width="1874" height="222" key="GridCell.Tab.0.left/0.27.1920.894@0.27.1920.894" timestamp="1574810259464" />
-    <state width="1874" height="257" key="GridCell.Tab.0.left/0.27.1920.999@0.27.1920.999" timestamp="1574810135499" />
-    <state width="1874" height="222" key="GridCell.Tab.0.right" timestamp="1574810259466">
-      <screen x="0" y="27" width="1920" height="894" />
-    </state>
-    <state width="1874" height="222" key="GridCell.Tab.0.right/0.27.1920.894@0.27.1920.894" timestamp="1574810259466" />
-    <state width="1874" height="257" key="GridCell.Tab.0.right/0.27.1920.999@0.27.1920.999" timestamp="1574810135499" />
-    <state width="1874" height="318" key="GridCell.Tab.1.bottom" timestamp="1574805954446">
-      <screen x="0" y="27" width="1920" height="999" />
-    </state>
-    <state width="1874" height="318" key="GridCell.Tab.1.bottom/0.27.1920.999@0.27.1920.999" timestamp="1574805954446" />
-    <state width="1874" height="318" key="GridCell.Tab.1.center" timestamp="1574805954444">
-      <screen x="0" y="27" width="1920" height="999" />
-    </state>
-    <state width="1874" height="318" key="GridCell.Tab.1.center/0.27.1920.999@0.27.1920.999" timestamp="1574805954444" />
-    <state width="1874" height="318" key="GridCell.Tab.1.left" timestamp="1574805954444">
-      <screen x="0" y="27" width="1920" height="999" />
-    </state>
-    <state width="1874" height="318" key="GridCell.Tab.1.left/0.27.1920.999@0.27.1920.999" timestamp="1574805954444" />
-    <state width="1874" height="318" key="GridCell.Tab.1.right" timestamp="1574805954445">
-      <screen x="0" y="27" width="1920" height="999" />
-    </state>
-    <state width="1874" height="318" key="GridCell.Tab.1.right/0.27.1920.999@0.27.1920.999" timestamp="1574805954445" />
   </component>
 </project>
