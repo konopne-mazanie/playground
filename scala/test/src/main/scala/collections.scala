@@ -37,5 +37,14 @@ object collections {
             case(key : Char, value : Char) => println(s"found pair char - char : $key, $value")
             case _ => println("other pair")
         }
+
+        val mySeq = Seq.range(1, 5)
+        println(mySeq.map(_ + 1))
+        println(mySeq.filter(num => num % 2 == 0))
+
+        println(myMap.map {
+            case (key : Int, value : Any) => Tuple2(key + mySeq.head, value)
+            case x : Any => x
+        })
     }
 }
