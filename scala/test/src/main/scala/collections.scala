@@ -1,7 +1,10 @@
+import java.util.NoSuchElementException
 import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.Map
 
 object collections {
+    def onlyDeclaredMethod(a: String, b: List[Int]): Unit = ???
+
     def main(args: Array[String]): Unit = {
         val intArray = ArrayBuffer[Int](1,2)
         intArray += 3 += 4
@@ -46,5 +49,26 @@ object collections {
             case (key : Int, value : Any) => Tuple2(key + mySeq.head, value)
             case x : Any => x
         })
+
+        try {
+            val x = Nil.head
+        } catch {
+            case e : NoSuchElementException => println(s"Exception caught $e")
+            case _ => println("Unexpected exception caught")
+        }
+
+        {
+            val mList = List(2,4,3,1);
+            println(mList.takeWhile(_ > 1))
+            println("(2-4-3-1)=" + mList.reduce(_ - _).toString)
+        }
+
+        val myTuple = (mySeq, "test", 10)
+        val (t1, t2, t3) = myTuple
+        println(s"$t1 $t2 $t3")
+
+
+
+
     }
 }

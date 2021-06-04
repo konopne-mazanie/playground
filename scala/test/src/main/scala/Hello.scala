@@ -44,5 +44,12 @@ object Hello {
         }
         println(new MyToStringOvrrideClass())
 
+        implicit class negLenImpl(str: String) {
+            def negLen() : Int = {
+                -1 * str.length
+            }
+        }
+        printf("test".negLen().toString)
+
     }
 }
