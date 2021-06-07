@@ -25,6 +25,8 @@ class MyFullClass(input : Int) extends MyAbstractClass(input) with MyTrait {
         privateFn()
     }
 
+    def returnPublicMutableInt() : Int = publicMutableInt
+
     override def willOverride(): Unit = {
         println("was overridden")
     }
